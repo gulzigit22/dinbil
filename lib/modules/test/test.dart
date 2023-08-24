@@ -1,6 +1,6 @@
 import 'package:dinbil/data/questions_example.dart';
 import 'package:dinbil/modules/test/result_screen.dart';
-import 'package:dinbil/theme/color/app_colors.dart';
+import 'package:dinbil/theme/color/colors.dart';
 import 'package:flutter/material.dart';
 
 class QuizzScreen extends StatefulWidget {
