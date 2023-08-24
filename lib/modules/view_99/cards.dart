@@ -21,7 +21,7 @@ class BuildContainer extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         width: double.infinity,
-        height: 90,
+        height: 92,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: AppColor.white,
