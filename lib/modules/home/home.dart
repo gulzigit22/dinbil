@@ -1,5 +1,5 @@
 import 'package:dinbil/modules/test/test.dart';
-import 'package:dinbil/modules/view/names.dart';
+import 'package:dinbil/modules/view_99/names.dart';
 
 import 'package:flutter/material.dart';
 
