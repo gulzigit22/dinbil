@@ -1,5 +1,5 @@
 import 'package:dinbil/modules/home/home.dart';
-import 'package:dinbil/theme/color/colors.dart';
+import 'package:dinbil/theme/color/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:quizz_app/screens/main_menu.dart';
