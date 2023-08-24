@@ -22,7 +22,7 @@ class _ResultScreenState extends State<ResultScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             width: double.infinity,
             child: Text(
               "Congratulations",
@@ -34,25 +34,25 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 45.0,
           ),
-          Text(
+          const Text(
             "You Score is",
             style: TextStyle(color: Colors.white, fontSize: 34.0),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Text(
             "${widget.score}",
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.orange,
               fontSize: 85.0,
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100.0,
           ),
           TextButton(
@@ -60,7 +60,7 @@ class _ResultScreenState extends State<ResultScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeView(),
+                    builder: (context) => const HomeView(),
                   ));
             },
             // shape: StadiumBorder(),
@@ -70,8 +70,8 @@ class _ResultScreenState extends State<ResultScreen> {
               decoration: BoxDecoration(
                   color: AppColor.secondaryColor,
                   borderRadius: BorderRadius.circular(30)),
-              padding: EdgeInsets.all(18.0),
-              child: Text(
+              padding: const EdgeInsets.all(18.0),
+              child: const Text(
                 "Reapeat the quizz",
                 style: TextStyle(color: Colors.white),
               ),

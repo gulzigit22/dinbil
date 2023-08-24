@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 4, 165, 154),
+          backgroundColor: const Color.fromARGB(255, 4, 165, 154),
           elevation: 0,
           actions: <Widget>[
             IconButton(
@@ -25,7 +25,7 @@ class HomeView extends StatelessWidget {
             )
           ],
         ),
-        backgroundColor: Color.fromARGB(255, 4, 165, 154),
+        backgroundColor: const Color.fromARGB(255, 4, 165, 154),
         body: Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Column(
@@ -54,7 +54,7 @@ class HomeView extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Text('" Саллаллоху алейхи ва саллам"'),
+                      const Text('" Саллаллоху алейхи ва саллам"'),
                     ],
                   ),
                 ),
@@ -72,15 +72,26 @@ class HomeView extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => QuizzScreen()));
+                                  builder: (context) => const QuizzScreen()));
                         },
                         child: Container(
                           height: 150,
                           width: 120,
                           decoration: BoxDecoration(
-                              color: Color(0xfffffffff),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/viktorina.png')),
+                              color: const Color(0xfffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Center(child: Text('ВИКТОРИНА')),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 100),
+                            child: Center(
+                                child: Text(
+                              'ВИКТОРИНА',
+                              style: TextStyle(
+                                  color: Color(0xff4C9C78),
+                                  fontWeight: FontWeight.w600),
+                            )),
+                          ),
                         ),
                       ),
                       const SizedBox(
@@ -92,7 +103,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дин макалар')),
+                        child: const Center(child: Text('Дин макалар')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -103,7 +114,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Аллахтын 99 ысымы')),
+                        child: const Center(child: Text('Аллахтын 99 ысымы')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -118,7 +129,7 @@ class HomeView extends StatelessWidget {
                       // ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Column(
@@ -127,9 +138,9 @@ class HomeView extends StatelessWidget {
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
-                            color: Color(0xfffffffff),
+                            color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('duba')),
+                        child: const Center(child: Text('duba')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -140,7 +151,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Намаз\nУбактысы')),
+                        child: const Center(child: Text('Намаз\nУбактысы')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -151,7 +162,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('онлайн суроо-жооп')),
+                        child: const Center(child: Text('онлайн суроо-жооп')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -177,7 +188,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('suroo-joob')),
+                        child: const Center(child: Text('suroo-joob')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -188,7 +199,8 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Исламдагы Маанилуу датта')),
+                        child: const Center(
+                            child: Text('Исламдагы Маанилуу датта')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -199,7 +211,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+                        child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -220,7 +232,7 @@ class HomeView extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Color.fromARGB(255, 4, 165, 154),
+          unselectedItemColor: const Color.fromARGB(255, 4, 165, 154),
           // backgroundColor: Colors.red,
           // selectedItemColor: Colors.red,
           // fixedColor: Colors.red,
