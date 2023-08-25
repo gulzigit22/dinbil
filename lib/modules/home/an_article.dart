@@ -340,8 +340,8 @@ class _CustomButtonState extends State<CustomButton> {
     return InkWell(
       onTap: widget.onTap,
       child: Container(
-        height: 50,
-        width: 357,
+        height: MediaQuery.of(context).size.height * 0.07,
+        width: MediaQuery.of(context).size.width * 0.90,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: const Color.fromARGB(204, 156, 239, 239),

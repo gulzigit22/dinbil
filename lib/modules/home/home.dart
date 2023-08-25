@@ -91,8 +91,8 @@ class HomeView extends StatelessWidget {
                               ),
                               color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 110),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 110),
                             child: Center(
                               child: Text(
                                 'Дин макалалар',
@@ -130,9 +130,9 @@ class HomeView extends StatelessWidget {
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
-                            color: Color(0xfffffffff),
+                            color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дуба')),
+                        child: const Center(child: Text('Дуба')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -172,7 +172,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('suroo-joob')),
+                        child: const Center(child: Text('suroo-joob')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -208,10 +208,7 @@ class HomeView extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Color.fromARGB(255, 4, 165, 154),
-          // backgroundColor: Colors.red,
-          // selectedItemColor: Colors.red,
-          // fixedColor: Colors.red,
+          unselectedItemColor: const Color.fromARGB(255, 4, 165, 154),
           currentIndex: 0,
           iconSize: 20.0,
           items: const [
