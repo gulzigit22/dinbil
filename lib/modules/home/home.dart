@@ -1,4 +1,5 @@
 import 'package:dinbil/modules/test/test.dart';
+import 'package:dinbil/modules/view_99/names.dart';
 
 import 'package:flutter/material.dart';
 
@@ -108,14 +109,34 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('Аллахтын 99 ысымы')),
-                      ),
+// <<<<<<< viktorina
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+//                         child: const Center(child: Text('Аллахтын 99 ысымы')),
+// =======
+//                       GestureDetector(
+//                         onTap: () {
+//                           Navigator.push(
+//                             context,
+//                             MaterialPageRoute(
+//                               builder: (context) => const NameView(),
+//                             ),
+//                           );
+//                         },
+//                         child: Container(
+//                           height: 150,
+//                           width: 120,
+//                           decoration: BoxDecoration(
+//                               color: const Color(0xffffffff),
+//                               borderRadius: BorderRadius.circular(30)),
+//                           child: Center(child: Text('Аллахтын 99 ысымы')),
+//                         ),
+// >>>>>>> main
+//                       ),
                       const SizedBox(
                         height: 10,
                       ),

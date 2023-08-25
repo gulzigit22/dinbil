@@ -1,5 +1,5 @@
 import 'package:dinbil/model/question_model.dart';
-import 'package:dinbil/theme/color/colors.dart';
+import 'package:dinbil/theme/color/app_colors.dart';
 import 'package:flutter/material.dart';
 
 Widget questionWidget(
