@@ -60,7 +60,7 @@ class _ResultScreenState extends State<ResultScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeView(),
+                    builder: (context) => const HomeView(),
                   ));
             },
             // shape: StadiumBorder(),
@@ -70,7 +70,11 @@ class _ResultScreenState extends State<ResultScreen> {
               decoration: BoxDecoration(
                   color: AppColor.secondaryColor,
                   borderRadius: BorderRadius.circular(30)),
-              padding: EdgeInsets.all(18.0),
+// <<<<<<< din-makala
+//               padding: EdgeInsets.all(18.0),
+// =======
+//               padding: const EdgeInsets.all(18.0),
+// >>>>>>> main
               child: const Text(
                 "Reapeat the quizz",
                 style: TextStyle(color: Colors.white),
