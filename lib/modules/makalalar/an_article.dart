@@ -1,24 +1,24 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:dinbil/modules/home/pages/page_1.dart';
-import 'package:dinbil/modules/home/pages/page_10.dart';
-import 'package:dinbil/modules/home/pages/page_11.dart';
-import 'package:dinbil/modules/home/pages/page_12.dart';
-import 'package:dinbil/modules/home/pages/page_13.dart';
-import 'package:dinbil/modules/home/pages/page_14.dart';
-import 'package:dinbil/modules/home/pages/page_15.dart';
-import 'package:dinbil/modules/home/pages/page_16.dart';
-import 'package:dinbil/modules/home/pages/page_17.dart';
-import 'package:dinbil/modules/home/pages/page_18.dart';
-import 'package:dinbil/modules/home/pages/page_19.dart';
-import 'package:dinbil/modules/home/pages/page_2.dart';
-import 'package:dinbil/modules/home/pages/page_4.dart';
-import 'package:dinbil/modules/home/pages/page_5.dart';
-import 'package:dinbil/modules/home/pages/page_6.dart';
-import 'package:dinbil/modules/home/pages/page_7.dart';
-import 'package:dinbil/modules/home/pages/page_8.dart';
-import 'package:dinbil/modules/home/pages/page_9.dart';
-import 'package:dinbil/modules/home/pages/pages_3.dart';
+import 'package:dinbil/modules/pages/page_1.dart';
+import 'package:dinbil/modules/pages/page_10.dart';
+import 'package:dinbil/modules/pages/page_11.dart';
+import 'package:dinbil/modules/pages/page_12.dart';
+import 'package:dinbil/modules/pages/page_13.dart';
+import 'package:dinbil/modules/pages/page_14.dart';
+import 'package:dinbil/modules/pages/page_15.dart';
+import 'package:dinbil/modules/pages/page_16.dart';
+import 'package:dinbil/modules/pages/page_17.dart';
+import 'package:dinbil/modules/pages/page_18.dart';
+import 'package:dinbil/modules/pages/page_19.dart';
+import 'package:dinbil/modules/pages/page_2.dart';
+import 'package:dinbil/modules/pages/page_4.dart';
+import 'package:dinbil/modules/pages/page_5.dart';
+import 'package:dinbil/modules/pages/page_6.dart';
+import 'package:dinbil/modules/pages/page_7.dart';
+import 'package:dinbil/modules/pages/page_8.dart';
+import 'package:dinbil/modules/pages/page_9.dart';
+import 'package:dinbil/modules/pages/pages_3.dart';
 import 'package:flutter/material.dart';
 
 class AnArticlePage extends StatefulWidget {
