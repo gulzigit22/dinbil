@@ -1,3 +1,4 @@
+import 'package:dinbil/modules/home/an_article.dart';
 import 'package:dinbil/modules/test/test.dart';
 import 'package:flutter/material.dart';
 
@@ -72,7 +73,7 @@ class HomeView extends StatelessWidget {
                             padding: EdgeInsets.only(top: 110),
                             child: Center(
                                 child: Text(
-                              'ВИКТОРИНА',
+                              'Викторина',
                               style: TextStyle(
                                   color: Color(0xff4C9C78),
                                   fontWeight: FontWeight.w600),
@@ -83,80 +84,38 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-// <<<<<<< din-makala
-//                       InkWell(
-//                         onTap: () {
-//                           Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                               builder: (context) => const AnArticlePage(),
-//                             ),
-//                           );
-//                         },
-//                         child: Container(
-//                           height: 150,
-//                           width: 120,
-//                           decoration: BoxDecoration(
-//                               image: const DecorationImage(
-//                                 image: AssetImage('assets/makala.png'),
-//                               ),
-//                               color: const Color(0xffffffff),
-//                               borderRadius: BorderRadius.circular(30)),
-//                           child: Padding(
-//                             padding: const EdgeInsets.only(top: 110),
-//                             child: Center(
-//                               child: Text(
-//                                 'Дин макалалар',
-//                                 style: TextStyle(
-//                                     fontSize: 14,
-//                                     fontWeight: FontWeight.w600,
-//                                     color: Color(0xff4C9C78)),
-//                               ),
-//                             ),
-//                           ),
-//                         ),
-//                       ),
-// =======
-//                       Container(
-//                         height: 150,
-//                         width: 120,
-//                         decoration: BoxDecoration(
-//                             color: const Color(0xffffffff),
-//                             borderRadius: BorderRadius.circular(30)),
-//                         child: const Center(child: Text('Дин макалар')),
-//                       ),
-//                       const SizedBox(
-//                         height: 10,
-//                       ),
-// // <<<<<<< viktorina
-// //                       Container(
-// //                         height: 150,
-// //                         width: 120,
-// //                         decoration: BoxDecoration(
-// //                             color: const Color(0xffffffff),
-// //                             borderRadius: BorderRadius.circular(30)),
-// //                         child: const Center(child: Text('Аллахтын 99 ысымы')),
-// // =======
-// //                       GestureDetector(
-// //                         onTap: () {
-// //                           Navigator.push(
-// //                             context,
-// //                             MaterialPageRoute(
-// //                               builder: (context) => const NameView(),
-// //                             ),
-// //                           );
-// //                         },
-// //                         child: Container(
-// //                           height: 150,
-// //                           width: 120,
-// //                           decoration: BoxDecoration(
-// //                               color: const Color(0xffffffff),
-// //                               borderRadius: BorderRadius.circular(30)),
-// //                           child: Center(child: Text('Аллахтын 99 ысымы')),
-// //                         ),
-// // >>>>>>> main
-// //                       ),
-// >>>>>>> main
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AnArticlePage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                image: AssetImage('assets/makala.png'),
+                              ),
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 110),
+                            child: Center(
+                              child: Text(
+                                'Дин макалалар',
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xff4C9C78)),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                       const SizedBox(
                         height: 10,
                       ),
