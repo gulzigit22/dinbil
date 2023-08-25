@@ -1,5 +1,6 @@
 import 'package:dinbil/model/question_model.dart';
-import 'package:dinbil/theme/color/app_colors.dart';
+import 'package:dinbil/theme/color/colors.dart';
+
 import 'package:flutter/material.dart';
 
 Widget questionWidget(
@@ -12,7 +13,11 @@ Widget questionWidget(
         child: Text(
           "${questionModel.question}",
           style: const TextStyle(
-            color: Colors.white,
+// <<<<<<< din-makala
+//             color: Color.fromARGB(255, 8, 8, 8),
+// =======
+//             color: Colors.white,
+// >>>>>>> main
             fontSize: 22.0,
           ),
         ),

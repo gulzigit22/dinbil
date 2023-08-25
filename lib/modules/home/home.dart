@@ -1,6 +1,5 @@
+import 'package:dinbil/modules/home/an_article.dart';
 import 'package:dinbil/modules/test/test.dart';
-import 'package:dinbil/modules/view_99/names.dart';
-
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,27 +9,33 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 4, 165, 154),
-          elevation: 0,
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(
-                Icons.account_circle_outlined,
-                size: 40,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                // do something
-              },
-            )
-          ],
-        ),
+// <<<<<<< din-makala
+// =======
+//         appBar: AppBar(
+//           backgroundColor: const Color.fromARGB(255, 4, 165, 154),
+//           elevation: 0,
+//           actions: <Widget>[
+//             IconButton(
+//               icon: const Icon(
+//                 Icons.account_circle_outlined,
+//                 size: 40,
+//                 color: Colors.white,
+//               ),
+//               onPressed: () {
+//                 // do something
+//               },
+//             )
+//           ],
+//         ),
+// >>>>>>> main
         backgroundColor: const Color.fromARGB(255, 4, 165, 154),
         body: Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Column(
             children: [
+              const SizedBox(
+                height: 20,
+              ),
               Center(
                 child: Container(
                   width: 350,
@@ -47,7 +52,7 @@ class HomeView extends StatelessWidget {
                           width: double.infinity,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: Colors.yellow,
+                            color: Color(0xff29907E),
                             borderRadius: BorderRadius.circular(60),
                           ),
                           child: const Center(
@@ -98,32 +103,13 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('Дин макалар')),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-// <<<<<<< viktorina
-//                       Container(
-//                         height: 150,
-//                         width: 120,
-//                         decoration: BoxDecoration(
-//                             color: const Color(0xffffffff),
-//                             borderRadius: BorderRadius.circular(30)),
-//                         child: const Center(child: Text('Аллахтын 99 ысымы')),
-// =======
-//                       GestureDetector(
+// <<<<<<< din-makala
+//                       InkWell(
 //                         onTap: () {
 //                           Navigator.push(
 //                             context,
 //                             MaterialPageRoute(
-//                               builder: (context) => const NameView(),
+//                               builder: (context) => const AnArticlePage(),
 //                             ),
 //                           );
 //                         },
@@ -131,23 +117,80 @@ class HomeView extends StatelessWidget {
 //                           height: 150,
 //                           width: 120,
 //                           decoration: BoxDecoration(
+//                               image: const DecorationImage(
+//                                 image: AssetImage('assets/makala.png'),
+//                               ),
 //                               color: const Color(0xffffffff),
 //                               borderRadius: BorderRadius.circular(30)),
-//                           child: Center(child: Text('Аллахтын 99 ысымы')),
+//                           child: Padding(
+//                             padding: const EdgeInsets.only(top: 110),
+//                             child: Center(
+//                               child: Text(
+//                                 'Дин макалалар',
+//                                 style: TextStyle(
+//                                     fontSize: 14,
+//                                     fontWeight: FontWeight.w600,
+//                                     color: Color(0xff4C9C78)),
+//                               ),
+//                             ),
+//                           ),
 //                         ),
-// >>>>>>> main
 //                       ),
+// =======
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+//                         child: const Center(child: Text('Дин макалар')),
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+// // <<<<<<< viktorina
+// //                       Container(
+// //                         height: 150,
+// //                         width: 120,
+// //                         decoration: BoxDecoration(
+// //                             color: const Color(0xffffffff),
+// //                             borderRadius: BorderRadius.circular(30)),
+// //                         child: const Center(child: Text('Аллахтын 99 ысымы')),
+// // =======
+// //                       GestureDetector(
+// //                         onTap: () {
+// //                           Navigator.push(
+// //                             context,
+// //                             MaterialPageRoute(
+// //                               builder: (context) => const NameView(),
+// //                             ),
+// //                           );
+// //                         },
+// //                         child: Container(
+// //                           height: 150,
+// //                           width: 120,
+// //                           decoration: BoxDecoration(
+// //                               color: const Color(0xffffffff),
+// //                               borderRadius: BorderRadius.circular(30)),
+// //                           child: Center(child: Text('Аллахтын 99 ысымы')),
+// //                         ),
+// // >>>>>>> main
+// //                       ),
+// >>>>>>> main
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
+                      Container(
+                        height: 150,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            color: const Color(0xffffffff),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: const Center(child: Text('Аллахтын 99 ысымы')),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
                     ],
                   ),
                   const SizedBox(
@@ -161,8 +204,12 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('duba')),
-                      ),
+// <<<<<<< din-makala
+//                         child: Center(child: Text('Дуба')),
+// =======
+//                         child: const Center(child: Text('duba')),
+// >>>>>>> main
+//                       ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -188,14 +235,6 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
                     ],
                   ),
                   const SizedBox(
@@ -237,14 +276,6 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
                     ],
                   ),
                 ],
