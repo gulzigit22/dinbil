@@ -9,6 +9,25 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+// <<<<<<< din-makala
+// =======
+//         appBar: AppBar(
+//           backgroundColor: const Color.fromARGB(255, 4, 165, 154),
+//           elevation: 0,
+//           actions: <Widget>[
+//             IconButton(
+//               icon: const Icon(
+//                 Icons.account_circle_outlined,
+//                 size: 40,
+//                 color: Colors.white,
+//               ),
+//               onPressed: () {
+//                 // do something
+//               },
+//             )
+//           ],
+//         ),
+// >>>>>>> main
         backgroundColor: const Color.fromARGB(255, 4, 165, 154),
         body: Padding(
           padding: const EdgeInsets.only(top: 20),
@@ -59,52 +78,105 @@ class HomeView extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => QuizzScreen()));
-                        },
-                        child: Container(
-                          height: 150,
-                          width: 120,
-                          decoration: BoxDecoration(
-                              color: Color(0xfffffffff),
-                              borderRadius: BorderRadius.circular(30)),
-                          child: Center(child: Text('ВИКТОРИНА')),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AnArticlePage(),
-                            ),
-                          );
+                                  builder: (context) => const QuizzScreen()));
                         },
                         child: Container(
                           height: 150,
                           width: 120,
                           decoration: BoxDecoration(
                               image: const DecorationImage(
-                                image: AssetImage('assets/makala.png'),
-                              ),
-                              color: const Color(0xffffffff),
+                                  image: AssetImage('assets/viktorina.png')),
+                              color: const Color(0xfffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 110),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 100),
                             child: Center(
-                              child: Text(
-                                'Дин макалалар',
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                    color: Color(0xff4C9C78)),
-                              ),
-                            ),
+                                child: Text(
+                              'ВИКТОРИНА',
+                              style: TextStyle(
+                                  color: Color(0xff4C9C78),
+                                  fontWeight: FontWeight.w600),
+                            )),
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+// <<<<<<< din-makala
+//                       InkWell(
+//                         onTap: () {
+//                           Navigator.push(
+//                             context,
+//                             MaterialPageRoute(
+//                               builder: (context) => const AnArticlePage(),
+//                             ),
+//                           );
+//                         },
+//                         child: Container(
+//                           height: 150,
+//                           width: 120,
+//                           decoration: BoxDecoration(
+//                               image: const DecorationImage(
+//                                 image: AssetImage('assets/makala.png'),
+//                               ),
+//                               color: const Color(0xffffffff),
+//                               borderRadius: BorderRadius.circular(30)),
+//                           child: Padding(
+//                             padding: const EdgeInsets.only(top: 110),
+//                             child: Center(
+//                               child: Text(
+//                                 'Дин макалалар',
+//                                 style: TextStyle(
+//                                     fontSize: 14,
+//                                     fontWeight: FontWeight.w600,
+//                                     color: Color(0xff4C9C78)),
+//                               ),
+//                             ),
+//                           ),
+//                         ),
+//                       ),
+// =======
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+//                         child: const Center(child: Text('Дин макалар')),
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+// // <<<<<<< viktorina
+// //                       Container(
+// //                         height: 150,
+// //                         width: 120,
+// //                         decoration: BoxDecoration(
+// //                             color: const Color(0xffffffff),
+// //                             borderRadius: BorderRadius.circular(30)),
+// //                         child: const Center(child: Text('Аллахтын 99 ысымы')),
+// // =======
+// //                       GestureDetector(
+// //                         onTap: () {
+// //                           Navigator.push(
+// //                             context,
+// //                             MaterialPageRoute(
+// //                               builder: (context) => const NameView(),
+// //                             ),
+// //                           );
+// //                         },
+// //                         child: Container(
+// //                           height: 150,
+// //                           width: 120,
+// //                           decoration: BoxDecoration(
+// //                               color: const Color(0xffffffff),
+// //                               borderRadius: BorderRadius.circular(30)),
+// //                           child: Center(child: Text('Аллахтын 99 ысымы')),
+// //                         ),
+// // >>>>>>> main
+// //                       ),
+// >>>>>>> main
                       const SizedBox(
                         height: 10,
                       ),
@@ -130,10 +202,14 @@ class HomeView extends StatelessWidget {
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
-                            color: Color(0xfffffffff),
+                            color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дуба')),
-                      ),
+// <<<<<<< din-makala
+//                         child: Center(child: Text('Дуба')),
+// =======
+//                         child: const Center(child: Text('duba')),
+// >>>>>>> main
+//                       ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -172,7 +248,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('suroo-joob')),
+                        child: const Center(child: Text('suroo-joob')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -208,7 +284,7 @@ class HomeView extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Color.fromARGB(255, 4, 165, 154),
+          unselectedItemColor: const Color.fromARGB(255, 4, 165, 154),
           // backgroundColor: Colors.red,
           // selectedItemColor: Colors.red,
           // fixedColor: Colors.red,

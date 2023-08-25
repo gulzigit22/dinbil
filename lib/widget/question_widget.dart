@@ -13,7 +13,11 @@ Widget questionWidget(
         child: Text(
           "${questionModel.question}",
           style: const TextStyle(
-            color: Color.fromARGB(255, 8, 8, 8),
+// <<<<<<< din-makala
+//             color: Color.fromARGB(255, 8, 8, 8),
+// =======
+//             color: Colors.white,
+// >>>>>>> main
             fontSize: 22.0,
           ),
         ),
@@ -31,7 +35,7 @@ Widget questionWidget(
             onPressed: function,
             child: Text(questionModel.answers!.keys.toList()[i]),
           ),
-        )
+        ),
     ],
   );
 }
