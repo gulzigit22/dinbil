@@ -35,7 +35,7 @@ class HomeView extends StatelessWidget {
                           width: double.infinity,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: Color(0xff29907E),
+                            color: const Color(0xff29907E),
                             borderRadius: BorderRadius.circular(60),
                           ),
                           child: const Center(
@@ -69,7 +69,7 @@ class HomeView extends StatelessWidget {
                           decoration: BoxDecoration(
                               image: const DecorationImage(
                                   image: AssetImage('assets/viktorina.png')),
-                              color: const Color(0xfffffffff),
+                              color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
                           child: const Padding(
                             padding: EdgeInsets.only(top: 100),
@@ -104,8 +104,8 @@ class HomeView extends StatelessWidget {
                               ),
                               color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 110),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 95),
                             child: Center(
                               child: Text(
                                 'Дин макалалар',
@@ -136,7 +136,7 @@ class HomeView extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Center(child: Text('Аллахтын 99 ысымы')),
+                          child: const Center(child: Text('Аллахтын 99 ысымы')),
                         ),
                       ),
                       const SizedBox(
@@ -155,7 +155,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дуба')),
+                        child: const Center(child: Text('Дуба')),
                       ),
                       const SizedBox(
                         height: 10,
