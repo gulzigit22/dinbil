@@ -48,21 +48,39 @@ class _QuizzScreenState extends State<QuizzScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: double.infinity,
-                    child: Text(
-                      "Test ${index + 1}/10",
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28.0,
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .popUntil((route) => route.isFirst);
+                            },
+                            icon: const Icon(Icons.west),
+                          ),
+                        ],
                       ),
-                    ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: Text(
+                          "Test ${index + 1}/200",
+                          textAlign: TextAlign.start,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 28.0,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   SizedBox(
@@ -70,7 +88,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                     height: 200.0,
                     child: Text(
                       "${questions[index].question}",
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 22.0,
                       ),
@@ -80,7 +98,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                     Container(
                       width: double.infinity,
                       height: 50.0,
-                      margin: EdgeInsets.only(
+                      margin: const EdgeInsets.only(
                           bottom: 20.0, left: 12.0, right: 12.0),
                       child: RawMaterialButton(
                         shape: RoundedRectangleBorder(
@@ -108,14 +126,18 @@ class _QuizzScreenState extends State<QuizzScreen> {
                                 });
                               }
                             : null,
-                        child: Text(questions[index].answers!.keys.toList()[i],
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.0,
-                            )),
+                        child: Center(
+                          child:
+                              Text(questions[index].answers!.keys.toList()[i],
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                  )),
+                        ),
                       ),
                     ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40.0,
                   ),
                   RawMaterialButton(
@@ -141,7 +163,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                     elevation: 0.0,
                     child: Text(
                       btnText,
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     ),
                   )
                 ],
