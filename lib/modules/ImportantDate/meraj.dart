@@ -6,8 +6,19 @@ class MerajKechesi extends StatelessWidget {
   @override
   Scaffold build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 10, 115, 108),
       appBar: AppBar(
-        title: const Text('MerajKechesi'),
+        backgroundColor: const Color.fromARGB(255, 10, 115, 108),
+        title: const Text('МЕРАЖ КЕЧЕСИ'),
+        centerTitle: true,
+        elevation: 0,
+      ),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            Text(''),
+          ],
+        ),
       ),
     );
   }

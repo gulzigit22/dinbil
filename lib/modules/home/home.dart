@@ -214,17 +214,18 @@ class HomeView extends StatelessWidget {
                                 color: const Color(0xffffffff),
                                 borderRadius: BorderRadius.circular(30)),
                             child: const Center(
-                                child: Padding(
-                              padding: EdgeInsets.only(top: 100),
-                              child: Text(
-                                'Маанилүү даталар',
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 4, 165, 154),
+                              child: Padding(
+                                padding: EdgeInsets.only(top: 100),
+                                child: Text(
+                                  'Маанилүү даталар',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 4, 165, 154),
+                                  ),
                                 ),
                               ),
-                            )),
+                            ),
                           ),
                         ]),
                       ),

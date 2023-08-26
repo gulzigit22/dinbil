@@ -26,8 +26,9 @@ class CastomBatton extends StatelessWidget {
           child: Text(
             text,
             style: const TextStyle(
-              color: Color.fromARGB(255, 10, 115, 108),
-            ),
+                color: Color.fromARGB(255, 10, 115, 108),
+                fontSize: 20,
+                fontWeight: FontWeight.w600),
           ),
         ),
       ),
