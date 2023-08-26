@@ -1,7 +1,8 @@
 // import 'package:dinbil/modules/home/an_article.dart';
 import 'package:dinbil/modules/makalalar/an_article.dart';
 import 'package:dinbil/modules/pages/page_6.dart';
-import 'package:dinbil/modules/test/test.dart';
+import 'package:dinbil/modules/test/quiz_buttom.dart';
+
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -35,7 +36,7 @@ class HomeView extends StatelessWidget {
                           width: double.infinity,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: const Color(0xff29907E),
+                            color: const Color(0xCC29907E),
                             borderRadius: BorderRadius.circular(60),
                           ),
                           child: const Center(
@@ -43,7 +44,14 @@ class HomeView extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const Text('" Саллаллоху алейхи ва саллам"'),
+                      Text(
+                        '"Саллаллоху алейхи ва саллам"',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.orange[500],
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -61,7 +69,7 @@ class HomeView extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const QuizzScreen()));
+                                  builder: (context) => const QuizButtom()));
                         },
                         child: Container(
                           height: 150,

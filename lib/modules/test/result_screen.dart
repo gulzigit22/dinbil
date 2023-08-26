@@ -25,7 +25,7 @@ class _ResultScreenState extends State<ResultScreen> {
           const SizedBox(
             width: double.infinity,
             child: Text(
-              "Congratulations",
+              "Куттуктайбыз",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
@@ -38,7 +38,7 @@ class _ResultScreenState extends State<ResultScreen> {
             height: 45.0,
           ),
           const Text(
-            "You Score is",
+            "Сиздин жыйынтыгыңыз",
             style: TextStyle(color: Colors.white, fontSize: 34.0),
           ),
           const SizedBox(
@@ -67,6 +67,8 @@ class _ResultScreenState extends State<ResultScreen> {
             // color: AppColor.secondaryColor,
             // padding: EdgeInsets.all(18.0),
             child: Container(
+              height: 50,
+              width: 150,
               decoration: BoxDecoration(
                   color: AppColor.secondaryColor,
                   borderRadius: BorderRadius.circular(30)),
@@ -75,9 +77,11 @@ class _ResultScreenState extends State<ResultScreen> {
 // =======
 //               padding: const EdgeInsets.all(18.0),
 // >>>>>>> main
-              child: const Text(
-                "Reapeat the quizz",
-                style: TextStyle(color: Colors.white),
+              child: const Center(
+                child: Text(
+                  "Башкы бетке өтүү",
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ),
           ),

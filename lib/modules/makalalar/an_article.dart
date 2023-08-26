@@ -40,7 +40,7 @@ class _AnArticlePageState extends State<AnArticlePage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20),
+          padding: const EdgeInsets.only(left: 35),
           child: Column(
             children: [
               const SizedBox(
