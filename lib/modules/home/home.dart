@@ -1,5 +1,8 @@
-import 'package:dinbil/modules/test/test.dart';
+import 'dart:ui';
 
+import 'package:dinbil/modules/ImportantDate/date.dart';
+import 'package:dinbil/modules/test/test.dart';
+import 'package:dinbil/modules/view_99/names.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -92,18 +95,28 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дин макалар')),
+                        child: Center(child: Text('Диний макалалар')),
                       ),
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Аллахтын 99 ысымы')),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const NameView(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Center(child: Text('Аллахтын 99 ысымы')),
+                        ),
                       ),
                       const SizedBox(
                         height: 10,
@@ -118,7 +131,7 @@ class HomeView extends StatelessWidget {
                       // ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Column(
@@ -127,9 +140,9 @@ class HomeView extends StatelessWidget {
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
-                            color: Color(0xfffffffff),
+                            color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('duba')),
+                        child: const Center(child: Text('duba')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -140,7 +153,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Намаз\nУбактысы')),
+                        child: const Center(child: Text('Намаз\nУбактысы')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -182,14 +195,40 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Исламдагы Маанилуу датта')),
+
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ImportantDate()),
+                          );
+                        },
+                        child: Stack(children: [
+                          Container(
+                            height: 150,
+                            width: 120,
+                            decoration: BoxDecoration(
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/Time_date.png')),
+                                color: const Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(30)),
+                            child: const Center(
+                                child: Padding(
+                              padding: EdgeInsets.only(top: 100),
+                              child: Text(
+                                'Маанилүү даталар',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 4, 165, 154),
+                                ),
+                              ),
+                            )),
+                          ),
+                        ]),
                       ),
+
                       const SizedBox(
                         height: 10,
                       ),
@@ -199,7 +238,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+                        child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
                       ),
                       const SizedBox(
                         height: 10,
