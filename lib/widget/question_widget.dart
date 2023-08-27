@@ -1,5 +1,10 @@
 import 'package:dinbil/model/question_model.dart';
-import 'package:dinbil/theme/color/app_colors.dart';
+// <<<<<<< importandDate
+// import 'package:dinbil/theme/color/app_colors.dart';
+// =======
+// import 'package:dinbil/theme/color/colors.dart';
+
+// >>>>>>> main
 import 'package:flutter/material.dart';
 
 Widget questionWidget(
@@ -11,8 +16,12 @@ Widget questionWidget(
         height: 200.0,
         child: Text(
           "${questionModel.question}",
-          style: TextStyle(
-            color: Colors.white,
+          style: const TextStyle(
+// <<<<<<< din-makala
+//             color: Color.fromARGB(255, 8, 8, 8),
+// =======
+//             color: Colors.white,
+// >>>>>>> main
             fontSize: 22.0,
           ),
         ),
@@ -21,7 +30,7 @@ Widget questionWidget(
         Container(
           width: double.infinity,
           height: 50.0,
-          margin: EdgeInsets.only(bottom: 20.0, left: 12.0, right: 12.0),
+          margin: const EdgeInsets.only(bottom: 20.0, left: 12.0, right: 12.0),
           child: RawMaterialButton(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
@@ -30,7 +39,7 @@ Widget questionWidget(
             onPressed: function,
             child: Text(questionModel.answers!.keys.toList()[i]),
           ),
-        )
+        ),
     ],
   );
 }

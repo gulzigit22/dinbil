@@ -1,8 +1,15 @@
-import 'dart:ui';
+// <<<<<<< importandDate
+// import 'dart:ui';
 
-import 'package:dinbil/modules/ImportantDate/date.dart';
-import 'package:dinbil/modules/test/test.dart';
-import 'package:dinbil/modules/view_99/names.dart';
+// import 'package:dinbil/modules/ImportantDate/date.dart';
+// import 'package:dinbil/modules/test/test.dart';
+// import 'package:dinbil/modules/view_99/names.dart';
+// =======
+// // import 'package:dinbil/modules/home/an_article.dart';
+// import 'package:dinbil/modules/makalalar/an_article.dart';
+// import 'package:dinbil/modules/pages/page_6.dart';
+// import 'package:dinbil/modules/test/test.dart';
+// >>>>>>> main
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -12,27 +19,14 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 4, 165, 154),
-          elevation: 0,
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(
-                Icons.account_circle_outlined,
-                size: 40,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                // do something
-              },
-            )
-          ],
-        ),
-        backgroundColor: Color.fromARGB(255, 4, 165, 154),
+        backgroundColor: const Color.fromARGB(255, 4, 165, 154),
         body: Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Column(
             children: [
+              const SizedBox(
+                height: 20,
+              ),
               Center(
                 child: Container(
                   width: 350,
@@ -49,7 +43,7 @@ class HomeView extends StatelessWidget {
                           width: double.infinity,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: Colors.yellow,
+                            color: const Color(0xff29907E),
                             borderRadius: BorderRadius.circular(60),
                           ),
                           child: const Center(
@@ -57,7 +51,7 @@ class HomeView extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Text('" Саллаллоху алейхи ва саллам"'),
+                      const Text('" Саллаллоху алейхи ва саллам"'),
                     ],
                   ),
                 ),
@@ -75,75 +69,120 @@ class HomeView extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => QuizzScreen()));
+                                  builder: (context) => const QuizzScreen()));
                         },
                         child: Container(
                           height: 150,
                           width: 120,
                           decoration: BoxDecoration(
-                              color: Color(0xfffffffff),
-                              borderRadius: BorderRadius.circular(30)),
-                          child: Center(child: Text('ВИКТОРИНА')),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Диний макалалар')),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const NameView(),
-                            ),
-                          );
-                        },
-                        child: Container(
-                          height: 150,
-                          width: 120,
-                          decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/viktorina.png')),
                               color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: const Center(child: Text('Аллахтын 99 ысымы')),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 100),
+                            child: Center(
+                                child: Text(
+                              'ВИКТОРИНА',
+                              style: TextStyle(
+                                  color: Color(0xff4C9C78),
+                                  fontWeight: FontWeight.w600),
+                            )),
+                          ),
                         ),
                       ),
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
-                    ],
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xfffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('duba')),
-                      ),
+// <<<<<<< importandDate
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+//                         child: Center(child: Text('Диний макалалар')),
+// // =======
+// //                       InkWell(
+// //                         onTap: () {
+// //                           Navigator.push(
+// //                             context,
+// //                             MaterialPageRoute(
+// //                               builder: (context) => const AnArticlePage(),
+// //                             ),
+// //                           );
+// //                         },
+// //                         child: Container(
+// //                           height: 150,
+// //                           width: 120,
+// //                           decoration: BoxDecoration(
+// //                               image: const DecorationImage(
+// //                                 image: AssetImage('assets/makala.png'),
+// //                               ),
+// //                               color: const Color(0xffffffff),
+// //                               borderRadius: BorderRadius.circular(30)),
+// //                           child: const Padding(
+// //                             padding: EdgeInsets.only(top: 95),
+// //                             child: Center(
+// //                               child: Text(
+// //                                 'Дин макалалар',
+// //                                 style: TextStyle(
+// //                                     fontSize: 14,
+// //                                     fontWeight: FontWeight.w600,
+// //                                     color: Color(0xff4C9C78)),
+// //                               ),
+// //                             ),
+// //                           ),
+// //                         ),
+// // >>>>>>> main
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                       GestureDetector(
+//                         onTap: () {
+//                           Navigator.push(
+//                             context,
+//                             MaterialPageRoute(
+// // <<<<<<< importandDate
+// //                               builder: (context) => const NameView(),
+// // =======
+// //                               builder: (context) => const SixthPage(),
+// // >>>>>>> main
+//                             ),
+//                           );
+//                         },
+//                         child: Container(
+//                           height: 150,
+//                           width: 120,
+//                           decoration: BoxDecoration(
+//                               color: const Color(0xffffffff),
+//                               borderRadius: BorderRadius.circular(30)),
+//                           child: const Center(child: Text('Аллахтын 99 ысымы')),
+//                         ),
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                     ],
+//                   ),
+//                   const SizedBox(
+//                     width: 10,
+//                   ),
+//                   Column(
+//                     children: [
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xfffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+// <<<<<<< importandDate
+//                         child: const Center(child: Text('duba')),
+// =======
+//                         child: const Center(child: Text('Дуба')),
+// >>>>>>> main
+//                       ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -164,19 +203,11 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('онлайн суроо-жооп')),
+                        child: const Center(child: Text('онлайн суроо-жооп')),
                       ),
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
                     ],
                   ),
                   const SizedBox(
@@ -190,45 +221,56 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('suroo-joob')),
+                        child: const Center(child: Text('suroo-joob')),
                       ),
                       const SizedBox(
                         height: 10,
                       ),
+// <<<<<<< importandDate
 
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const ImportantDate()),
-                          );
-                        },
-                        child: Stack(children: [
-                          Container(
-                            height: 150,
-                            width: 120,
-                            decoration: BoxDecoration(
-                                image: const DecorationImage(
-                                    image: AssetImage('assets/Time_date.png')),
-                                color: const Color(0xffffffff),
-                                borderRadius: BorderRadius.circular(30)),
-                            child: const Center(
-                              child: Padding(
-                                padding: EdgeInsets.only(top: 100),
-                                child: Text(
-                                  'Маанилүү даталар',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 4, 165, 154),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ]),
-                      ),
+//                       InkWell(
+//                         onTap: () {
+//                           Navigator.push(
+//                             context,
+//                             MaterialPageRoute(
+//                                 builder: (context) => const ImportantDate()),
+//                           );
+//                         },
+//                         child: Stack(children: [
+//                           Container(
+//                             height: 150,
+//                             width: 120,
+//                             decoration: BoxDecoration(
+//                                 image: const DecorationImage(
+//                                     image: AssetImage('assets/Time_date.png')),
+//                                 color: const Color(0xffffffff),
+//                                 borderRadius: BorderRadius.circular(30)),
+//                             child: const Center(
+//                               child: Padding(
+//                                 padding: EdgeInsets.only(top: 100),
+//                                 child: Text(
+//                                   'Маанилүү даталар',
+//                                   style: TextStyle(
+//                                     fontSize: 12,
+//                                     fontWeight: FontWeight.bold,
+//                                     color: Color.fromARGB(255, 4, 165, 154),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ),
+//                           ),
+//                         ]),
+// =======
+//                       Container(
+//                         height: 150,
+//                         width: 120,
+//                         decoration: BoxDecoration(
+//                             color: const Color(0xffffffff),
+//                             borderRadius: BorderRadius.circular(30)),
+//                         child: const Center(
+//                             child: Text('Исламдагы Маанилуу датта')),
+// >>>>>>> main
+//                       ),
 
                       const SizedBox(
                         height: 10,
@@ -244,14 +286,6 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      // Container(
-                      //   height: 100,
-                      //   width: 100,
-                      //   decoration: BoxDecoration(
-                      //       color: const Color(0xffffffff),
-                      //       borderRadius: BorderRadius.circular(30)),
-                      //   child: Center(child: Text('Test')),
-                      // ),
                     ],
                   ),
                 ],
@@ -260,10 +294,8 @@ class HomeView extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Color.fromARGB(255, 4, 165, 154),
-          // backgroundColor: Colors.red,
-          // selectedItemColor: Colors.red,
-          // fixedColor: Colors.red,
+          selectedItemColor: Colors.blue,
+          onTap: (value) {},
           currentIndex: 0,
           iconSize: 20.0,
           items: const [
