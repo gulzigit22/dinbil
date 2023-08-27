@@ -1,6 +1,10 @@
 import 'package:dinbil/model/question_model.dart';
-import 'package:dinbil/theme/color/colors.dart';
+// <<<<<<< importandDate
+// import 'package:dinbil/theme/color/app_colors.dart';
+// =======
+// import 'package:dinbil/theme/color/colors.dart';
 
+// >>>>>>> main
 import 'package:flutter/material.dart';
 
 Widget questionWidget(
