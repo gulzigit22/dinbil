@@ -1,3 +1,4 @@
+import 'package:dinbil/modules/ImportantDate/them/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MerajKechesi extends StatelessWidget {
@@ -6,9 +7,9 @@ class MerajKechesi extends StatelessWidget {
   @override
   Scaffold build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 10, 115, 108),
+      backgroundColor: AppColors.appBgC,
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 10, 115, 108),
+        backgroundColor: AppColors.appBgC,
         title: const Text('МЕРАЖ КЕЧЕСИ'),
         centerTitle: true,
         elevation: 0,

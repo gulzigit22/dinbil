@@ -5,6 +5,8 @@ import 'package:dinbil/modules/ImportantDate/kurban.dart';
 import 'package:dinbil/modules/ImportantDate/meraj.dart';
 import 'package:dinbil/modules/ImportantDate/orozo.dart';
 import 'package:dinbil/modules/ImportantDate/ramadan.dart';
+import 'package:dinbil/modules/ImportantDate/them/app_colors.dart';
+import 'package:dinbil/modules/ImportantDate/them/text_style.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,13 +16,12 @@ class ImportantDate extends StatelessWidget {
   @override
   Scaffold build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 10, 115, 108),
+      backgroundColor: AppColors.appBgC,
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 10, 115, 108),
+        backgroundColor: AppColors.appBgC,
         title: const Text(
           'Исламдагы маанилүү даталар',
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
+          style: AppTextStyles.AppBarStyle,
         ),
         centerTitle: true,
         elevation: 0,

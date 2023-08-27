@@ -1,3 +1,5 @@
+import 'package:dinbil/modules/ImportantDate/them/app_colors.dart';
+import 'package:dinbil/modules/ImportantDate/them/text_style.dart';
 import 'package:flutter/material.dart';
 
 class CastomBatton extends StatelessWidget {
@@ -19,17 +21,11 @@ class CastomBatton extends StatelessWidget {
         height: 90,
         width: width,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.whiteColor,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Center(
-          child: Text(
-            text,
-            style: const TextStyle(
-                color: Color.fromARGB(255, 10, 115, 108),
-                fontSize: 20,
-                fontWeight: FontWeight.w600),
-          ),
+          child: Text(text, style: AppTextStyles.ContainerStyle),
         ),
       ),
     );
