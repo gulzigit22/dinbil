@@ -5,8 +5,8 @@ import 'package:dinbil/modules/ImportantDate/kurban.dart';
 import 'package:dinbil/modules/ImportantDate/meraj.dart';
 import 'package:dinbil/modules/ImportantDate/orozo.dart';
 import 'package:dinbil/modules/ImportantDate/ramadan.dart';
-import 'package:dinbil/modules/ImportantDate/them/app_colors.dart';
 import 'package:dinbil/modules/ImportantDate/them/text_style.dart';
+import 'package:dinbil/theme/color/app_colors.dart';
 
 import 'package:flutter/material.dart';
 
@@ -16,12 +16,17 @@ class ImportantDate extends StatelessWidget {
   @override
   Scaffold build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.appBgC,
+      backgroundColor: AppColor.primaryColor,
       appBar: AppBar(
-        backgroundColor: AppColors.appBgC,
-        title: const Text(
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back, color: AppColor.textColor)),
+        backgroundColor: AppColor.primaryColor,
+        title: Text(
           'Исламдагы маанилүү даталар',
-          style: AppTextStyles.AppBarStyle,
+          style: AppTextStyles.appBarStyle,
         ),
         centerTitle: true,
         elevation: 0,
@@ -31,16 +36,6 @@ class ImportantDate extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Padding(
-            //   padding: const EdgeInsets.only(right: 300),
-            //   child: IconButton(
-            //     onPressed: () {
-            //       Navigator.pop(context);
-            //     },
-            //     icon: Icon(Icons.arrow_back),
-            //     color: Colors.white,
-            //   ),
-            // ),
             CastomBatton(
               text: 'РАМАЗАН',
               onTap: () {

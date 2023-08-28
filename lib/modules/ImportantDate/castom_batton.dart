@@ -1,5 +1,5 @@
-import 'package:dinbil/modules/ImportantDate/them/app_colors.dart';
 import 'package:dinbil/modules/ImportantDate/them/text_style.dart';
+import 'package:dinbil/theme/color/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CastomBatton extends StatelessWidget {
@@ -17,15 +17,18 @@ class CastomBatton extends StatelessWidget {
     final width = MediaQuery.of(context).size.width * 60;
     return InkWell(
       onTap: onTap,
-      child: Container(
-        height: 90,
-        width: width,
-        decoration: BoxDecoration(
-          color: AppColors.whiteColor,
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Center(
-          child: Text(text, style: AppTextStyles.ContainerStyle),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          height: 70,
+          width: width,
+          decoration: BoxDecoration(
+            color: AppColor.textColor,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(
+            child: Text(text, style: AppTextStyles.containerStyle),
+          ),
         ),
       ),
     );

@@ -13,7 +13,7 @@ class _NameViewState extends State<NameView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.pripmaryColor,
+      backgroundColor: AppColor.backgroundColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

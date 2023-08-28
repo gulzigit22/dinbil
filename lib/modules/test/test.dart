@@ -27,7 +27,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.pripmaryColor,
+      backgroundColor: AppColor.primaryColor,
       body: Padding(
           padding: const EdgeInsets.all(18.0),
           child: PageView.builder(
@@ -69,16 +69,16 @@ class _QuizzScreenState extends State<QuizzScreen> {
                         child: Text(
                           "Test ${index + 1}/200",
                           textAlign: TextAlign.start,
-                          style: const TextStyle(
-                            color: Colors.white,
+                          style: TextStyle(
+                            color: AppColor.textColor,
                             fontSize: 28.0,
                           ),
                         ),
                       ),
                     ],
                   ),
-                  const Divider(
-                    color: Colors.white,
+                  Divider(
+                    color: AppColor.textColor,
                   ),
                   const SizedBox(
                     height: 10.0,
@@ -88,8 +88,8 @@ class _QuizzScreenState extends State<QuizzScreen> {
                     height: 200.0,
                     child: Text(
                       "${questions[index].question}",
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style: TextStyle(
+                        color: AppColor.textColor,
                         fontSize: 22.0,
                       ),
                     ),
@@ -106,9 +106,9 @@ class _QuizzScreenState extends State<QuizzScreen> {
                         ),
                         fillColor: btnPressed
                             ? questions[index].answers!.values.toList()[i]
-                                ? Colors.green
-                                : Colors.red
-                            : AppColor.secondaryColor,
+                                ? Color(0xff016F6C)
+                                : Color(0xff48CBC5)
+                            : AppColor.containerColor,
                         onPressed: !answered
                             ? () {
                                 if (questions[index]
@@ -131,7 +131,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                               Text(questions[index].answers!.keys.toList()[i],
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: AppColor.answertextColor,
                                     fontSize: 18.0,
                                   )),
                         ),
@@ -158,12 +158,12 @@ class _QuizzScreenState extends State<QuizzScreen> {
                       }
                     },
                     shape: StadiumBorder(),
-                    fillColor: Colors.blue,
+                    fillColor: AppColor.containerColor,
                     padding: EdgeInsets.all(18.0),
                     elevation: 0.0,
                     child: Text(
                       btnText,
-                      style: const TextStyle(color: Colors.white),
+                      style: TextStyle(color: AppColor.answertextColor),
                     ),
                   )
                 ],
