@@ -1,3 +1,4 @@
+import 'package:dinbil/baaluuluktar/first_page.dart';
 import 'package:dinbil/modules/ImportantDate/date.dart';
 import 'package:dinbil/modules/makalalar/an_article.dart';
 import 'package:dinbil/modules/test/test.dart';
@@ -236,13 +237,23 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const FirstPage (suroo: '', joop: '',),
+                            ),
+                          );
+                        },
+                     child: Container(
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
                         child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+                      ),
                       ),
                       const SizedBox(
                         height: 10,
@@ -256,7 +267,8 @@ class HomeView extends StatelessWidget {
         ),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.blue,
-          onTap: (value) {},
+          onTap: (value) {
+          },
           currentIndex: 0,
           iconSize: 20.0,
           items: const [
