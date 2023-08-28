@@ -1,13 +1,7 @@
 import 'package:dinbil/modules/home/home.dart';
-// <<<<<<< importandDate
-// import 'package:dinbil/theme/color/app_colors.dart';
-// import 'package:flutter/cupertino.dart';
-// =======
-// import 'package:dinbil/theme/color/colors.dart';
+import 'package:dinbil/theme/color/app_colors.dart';
 
-// >>>>>>> main
 import 'package:flutter/material.dart';
-// import 'package:quizz_app/screens/main_menu.dart';
 
 // ignore: must_be_immutable
 class ResultScreen extends StatefulWidget {
@@ -75,15 +69,7 @@ class _ResultScreenState extends State<ResultScreen> {
               decoration: BoxDecoration(
                   color: AppColor.secondaryColor,
                   borderRadius: BorderRadius.circular(30)),
-// <<<<<<< importandDate
-//               padding: const EdgeInsets.all(18.0),
-// =======
-// // <<<<<<< din-makala
-// //               padding: EdgeInsets.all(18.0),
-// // =======
-// //               padding: const EdgeInsets.all(18.0),
-// // >>>>>>> main
-// >>>>>>> main
+              padding: const EdgeInsets.all(18.0),
               child: const Text(
                 "Reapeat the quizz",
                 style: TextStyle(color: Colors.white),

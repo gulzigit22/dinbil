@@ -1,15 +1,7 @@
-// <<<<<<< importandDate
-// import 'dart:ui';
-
-// import 'package:dinbil/modules/ImportantDate/date.dart';
-// import 'package:dinbil/modules/test/test.dart';
-// import 'package:dinbil/modules/view_99/names.dart';
-// =======
-// // import 'package:dinbil/modules/home/an_article.dart';
-// import 'package:dinbil/modules/makalalar/an_article.dart';
-// import 'package:dinbil/modules/pages/page_6.dart';
-// import 'package:dinbil/modules/test/test.dart';
-// >>>>>>> main
+import 'package:dinbil/modules/ImportantDate/date.dart';
+import 'package:dinbil/modules/makalalar/an_article.dart';
+import 'package:dinbil/modules/test/test.dart';
+import 'package:dinbil/modules/view_99/names.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -94,95 +86,77 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-// <<<<<<< importandDate
-//                       Container(
-//                         height: 150,
-//                         width: 120,
-//                         decoration: BoxDecoration(
-//                             color: const Color(0xffffffff),
-//                             borderRadius: BorderRadius.circular(30)),
-//                         child: Center(child: Text('Диний макалалар')),
-// // =======
-// //                       InkWell(
-// //                         onTap: () {
-// //                           Navigator.push(
-// //                             context,
-// //                             MaterialPageRoute(
-// //                               builder: (context) => const AnArticlePage(),
-// //                             ),
-// //                           );
-// //                         },
-// //                         child: Container(
-// //                           height: 150,
-// //                           width: 120,
-// //                           decoration: BoxDecoration(
-// //                               image: const DecorationImage(
-// //                                 image: AssetImage('assets/makala.png'),
-// //                               ),
-// //                               color: const Color(0xffffffff),
-// //                               borderRadius: BorderRadius.circular(30)),
-// //                           child: const Padding(
-// //                             padding: EdgeInsets.only(top: 95),
-// //                             child: Center(
-// //                               child: Text(
-// //                                 'Дин макалалар',
-// //                                 style: TextStyle(
-// //                                     fontSize: 14,
-// //                                     fontWeight: FontWeight.w600,
-// //                                     color: Color(0xff4C9C78)),
-// //                               ),
-// //                             ),
-// //                           ),
-// //                         ),
-// // >>>>>>> main
-//                       ),
-//                       const SizedBox(
-//                         height: 10,
-//                       ),
-//                       GestureDetector(
-//                         onTap: () {
-//                           Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-// // <<<<<<< importandDate
-// //                               builder: (context) => const NameView(),
-// // =======
-// //                               builder: (context) => const SixthPage(),
-// // >>>>>>> main
-//                             ),
-//                           );
-//                         },
-//                         child: Container(
-//                           height: 150,
-//                           width: 120,
-//                           decoration: BoxDecoration(
-//                               color: const Color(0xffffffff),
-//                               borderRadius: BorderRadius.circular(30)),
-//                           child: const Center(child: Text('Аллахтын 99 ысымы')),
-//                         ),
-//                       ),
-//                       const SizedBox(
-//                         height: 10,
-//                       ),
-//                     ],
-//                   ),
-//                   const SizedBox(
-//                     width: 10,
-//                   ),
-//                   Column(
-//                     children: [
-//                       Container(
-//                         height: 150,
-//                         width: 120,
-//                         decoration: BoxDecoration(
-//                             color: const Color(0xfffffffff),
-//                             borderRadius: BorderRadius.circular(30)),
-// <<<<<<< importandDate
-//                         child: const Center(child: Text('duba')),
-// =======
-//                         child: const Center(child: Text('Дуба')),
-// >>>>>>> main
-//                       ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AnArticlePage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              image: const DecorationImage(
+                                image: AssetImage('assets/makala.png'),
+                              ),
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Padding(
+                            padding: EdgeInsets.only(top: 95),
+                            child: Center(
+                              child: Text(
+                                'Дин макалалар',
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xff4C9C78)),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const NameView(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Center(child: Text('Аллахтын 99 ысымы')),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            color: const Color(0xfffffffff),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: const Center(child: Text('Дуба')),
+                      ),
                       const SizedBox(
                         height: 10,
                       ),
@@ -226,52 +200,39 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-// <<<<<<< importandDate
-
-//                       InkWell(
-//                         onTap: () {
-//                           Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                                 builder: (context) => const ImportantDate()),
-//                           );
-//                         },
-//                         child: Stack(children: [
-//                           Container(
-//                             height: 150,
-//                             width: 120,
-//                             decoration: BoxDecoration(
-//                                 image: const DecorationImage(
-//                                     image: AssetImage('assets/Time_date.png')),
-//                                 color: const Color(0xffffffff),
-//                                 borderRadius: BorderRadius.circular(30)),
-//                             child: const Center(
-//                               child: Padding(
-//                                 padding: EdgeInsets.only(top: 100),
-//                                 child: Text(
-//                                   'Маанилүү даталар',
-//                                   style: TextStyle(
-//                                     fontSize: 12,
-//                                     fontWeight: FontWeight.bold,
-//                                     color: Color.fromARGB(255, 4, 165, 154),
-//                                   ),
-//                                 ),
-//                               ),
-//                             ),
-//                           ),
-//                         ]),
-// =======
-//                       Container(
-//                         height: 150,
-//                         width: 120,
-//                         decoration: BoxDecoration(
-//                             color: const Color(0xffffffff),
-//                             borderRadius: BorderRadius.circular(30)),
-//                         child: const Center(
-//                             child: Text('Исламдагы Маанилуу датта')),
-// >>>>>>> main
-//                       ),
-
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ImportantDate()),
+                          );
+                        },
+                        child: Stack(children: [
+                          Container(
+                            height: 150,
+                            width: 120,
+                            decoration: BoxDecoration(
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/Time_date.png')),
+                                color: const Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(30)),
+                            child: const Center(
+                              child: Padding(
+                                padding: EdgeInsets.only(top: 100),
+                                child: Text(
+                                  'Маанилүү даталар',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 4, 165, 154),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ]),
+                      ),
                       const SizedBox(
                         height: 10,
                       ),
