@@ -1,24 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
 import 'package:dinbil/modules/home/pages/page_1.dart';
-import 'package:dinbil/modules/home/pages/page_10.dart';
-import 'package:dinbil/modules/home/pages/page_11.dart';
-import 'package:dinbil/modules/home/pages/page_12.dart';
-import 'package:dinbil/modules/home/pages/page_13.dart';
-import 'package:dinbil/modules/home/pages/page_14.dart';
-import 'package:dinbil/modules/home/pages/page_15.dart';
-import 'package:dinbil/modules/home/pages/page_16.dart';
-import 'package:dinbil/modules/home/pages/page_17.dart';
-import 'package:dinbil/modules/home/pages/page_18.dart';
-import 'package:dinbil/modules/home/pages/page_19.dart';
-import 'package:dinbil/modules/home/pages/page_2.dart';
-import 'package:dinbil/modules/home/pages/page_4.dart';
-import 'package:dinbil/modules/home/pages/page_5.dart';
-import 'package:dinbil/modules/home/pages/page_6.dart';
-import 'package:dinbil/modules/home/pages/page_7.dart';
-import 'package:dinbil/modules/home/pages/page_8.dart';
-import 'package:dinbil/modules/home/pages/page_9.dart';
-import 'package:dinbil/modules/home/pages/pages_3.dart';
+
 import 'package:flutter/material.dart';
 
 class AnArticlePage extends StatefulWidget {
@@ -63,12 +46,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '  «ДИН ЖАШООБУЗДУН ЖАЛПЫ БӨЛҮГҮН ӨЗҮНӨ КАМТЫП ТУРАТ»   ',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SecondPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SecondPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -78,12 +61,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
                 text:
                     '  «КАНДАЙ ЖАШАСАҢ ОШОНДОЙ ӨЛӨСҮҢ, КАНДАЙ ӨЛСӨҢ ОШОНДОЙ ТИРИЛЕСИҢ»  ',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ThirdPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const ThirdPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -92,12 +75,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«ИСЛАМДА ОЛУЯЛЫК ЖАНА КЕРЕМЕТ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FourthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const FourthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -106,12 +89,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«МУЖИЗА»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FifthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const FifthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -120,12 +103,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«ЖИНДЕР ААЛАМЫ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SixthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SixthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -134,12 +117,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«ШАЙТАН КИМ?»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SeventhPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SeventhPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -148,12 +131,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «АЧ КӨЗГӨ ДҮЙНӨНҮ БЕРСЕҢИЗ ДА ТОЙБОЙТ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const EighthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const EighthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -162,12 +145,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«КАРАҢГЫГА СҮЙРӨГӨН КҮНӨӨДӨН САКТАНАЛЫ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const NinethPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const NinethPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -176,12 +159,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«МУРАСКОРУ ЖОК БАЙЛЫК»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const TenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -190,12 +173,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«КЫЙЫНЧЫЛЫККА САБЫР КЫЛУУ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const EleventhPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const EleventhPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -204,12 +187,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «НАМАЗ – БЕЙИШТИН АЧКЫЧЫ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TwelfthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const TwelfthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -218,12 +201,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «КАБЫЛ БОЛГОН ДУБА»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TheTenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const TheTenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -232,12 +215,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «СӨЗДӨ СЫЙКЫР БАР»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TheFourteenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const TheFourteenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -246,12 +229,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «ЖИХАД ДЕГЕН ЭМНЕ?»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FifteenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const FifteenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -260,12 +243,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «ЭКСТРЕМИЗМ,ТЕРРОРИЗМ - БУЛ ИСЛАМ ЭМЕС»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SixteenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SixteenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -274,12 +257,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «ҮЙ-БҮЛӨГӨ ЖАНА АТА-ЭНЕГЕ ЖАКШЫЛЫК КЫЛУУ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SeventeenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const SeventeenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -288,12 +271,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: ' «КААБА, БАЙТУЛЛААХ, КЫБЛА»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const EighteenthPage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const EighteenthPage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
@@ -302,12 +285,12 @@ class _AnArticlePageState extends State<AnArticlePage> {
               CustomButton(
                 text: '«ИСЛАМ МАДАНИЯТЫ»',
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Nineteenthpage(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const Nineteenthpage(),
+                  //   ),
+                  // );
                 },
               ),
               const SizedBox(
