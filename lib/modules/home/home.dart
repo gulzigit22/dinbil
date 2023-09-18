@@ -1,6 +1,7 @@
 import 'package:dinbil/baaluuluktar/first_page.dart';
 import 'package:dinbil/modules/ImportantDate/date.dart';
 import 'package:dinbil/modules/makalalar/an_article.dart';
+import 'package:dinbil/modules/suroo_joob/suroo_joob.dart';
 import 'package:dinbil/modules/test/test.dart';
 import 'package:dinbil/modules/view_99/names.dart';
 import 'package:flutter/material.dart';
@@ -190,13 +191,23 @@ class HomeView extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('suroo-joob')),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const QuestionAnsPage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Center(child: Text('suroo-joob')),
+                        ),
                       ),
                       const SizedBox(
                         height: 10,

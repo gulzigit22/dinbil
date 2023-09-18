@@ -1,10 +1,11 @@
+import 'package:dinbil/theme/color/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
-  static const ContainerStyle = TextStyle(
-      color: Color.fromARGB(255, 10, 115, 108),
+  static final containerStyle = TextStyle(
+      color: AppColor.answertextColor,
       fontSize: 20,
       fontWeight: FontWeight.w600);
-  static const AppBarStyle =
-      TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20);
+  static final appBarStyle = TextStyle(
+      color: AppColor.textColor, fontWeight: FontWeight.w800, fontSize: 20);
 }

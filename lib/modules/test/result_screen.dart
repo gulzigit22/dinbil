@@ -16,7 +16,7 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.pripmaryColor,
+      backgroundColor: AppColor.primaryColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -67,7 +67,7 @@ class _ResultScreenState extends State<ResultScreen> {
             // padding: EdgeInsets.all(18.0),
             child: Container(
               decoration: BoxDecoration(
-                  color: AppColor.secondaryColor,
+                  color: AppColor.containerColor,
                   borderRadius: BorderRadius.circular(30)),
               padding: const EdgeInsets.all(18.0),
               child: const Text(

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class AppTextStyles {
   static final numberStyle = TextStyle(
     fontSize: 20,
-    color: AppColor.numberColor,
+    color: AppColor.textColor,
     fontWeight: FontWeight.w700,
   );
   static final descriptionTextStyle = TextStyle(
@@ -14,7 +14,7 @@ class AppTextStyles {
   );
   static final nameStyle = TextStyle(
     fontSize: 20,
-    color: AppColor.black,
+    color: AppColor.textColor,
     fontWeight: FontWeight.w500,
   );
 }
