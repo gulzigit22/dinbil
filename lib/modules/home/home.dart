@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-=======
 import 'package:dinbil/baaluuluktar/first_page.dart';
-import 'package:dinbil/modules/ImportantDate/date.dart';
-import 'package:dinbil/modules/makalalar/an_article.dart';
-import 'package:dinbil/modules/suroo_joob/suroo_joob.dart';
->>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
+
 import 'package:dinbil/modules/test/test.dart';
 
 import 'package:flutter/material.dart';
@@ -19,150 +14,133 @@ class HomeView extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          child: Column(
-            children: [
-              const SizedBox(
-                height: 20,
+          child: Column(children: [
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: double.infinity,
+              height: 100,
+              decoration: BoxDecoration(
+                color: const Color(0xffffffff),
+                borderRadius: BorderRadius.circular(20),
               ),
-              Container(
-                width: double.infinity,
-                height: 100,
-                decoration: BoxDecoration(
-                  color: const Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const SizedBox(height: 10),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: double.infinity,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xff29907E),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const Center(
-                          child: Text('Күндүн хадиси'),
-                        ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff29907E),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Center(
+                        child: Text('Күндүн хадиси'),
                       ),
                     ),
-                    const SizedBox(height: 5),
-                    const Text(
-                      '"Саллаллоху алейхи ва саллам"',
-                      style: TextStyle(),
-                      maxLines: 2,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20),
-              Expanded(
-                child: GridView.count(
-                  crossAxisSpacing: 20,
-                  mainAxisSpacing: 20,
-                  crossAxisCount: 2,
-                  children: [
-                    ...List.generate(8, (index) => "Viktorina $index")
-                        .map((e) => InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const QuizzScreen(),
-                                  ),
-                                );
-                              },
-                              child: Container(
-                                padding: const EdgeInsets.all(6),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xffffffff),
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Image.asset(
-                                      "assets/viktorina.png",
-                                      width: 75,
-                                      height: 75,
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(
-                                      e,
-                                      style: const TextStyle(
-                                        color: Color(0xff4C9C78),
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 18,
-                                      ),
-                                      overflow: TextOverflow.ellipsis,
-                                      maxLines: 2,
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ],
-                                ),
-                              ),
-<<<<<<< HEAD
-                            )),
-                  ],
-                ),
-=======
-                            ),
-                          ),
-                        ]),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const FirstPage (suroo: '', joop: '',),
-                            ),
-                          );
-                        },
-                     child: Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
-                      ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                    ],
+                  ),
+                  const SizedBox(height: 5),
+                  const Text(
+                    '"Саллаллоху алейхи ва саллам"',
+                    style: TextStyle(),
+                    maxLines: 2,
                   ),
                 ],
->>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
               ),
-              const SizedBox(height: 15),
-            ],
-          ),
+            ),
+            const SizedBox(height: 20),
+            Expanded(
+              child: GridView.count(
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 20,
+                crossAxisCount: 2,
+                children: [
+                  ...List.generate(8, (index) => "Viktorina $index")
+                      .map((e) => InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const QuizzScreen(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              padding: const EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                color: const Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    "assets/viktorina.png",
+                                    width: 75,
+                                    height: 75,
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    e,
+                                    style: const TextStyle(
+                                      color: Color(0xff4C9C78),
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18,
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 2,
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )),
+                ],
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FirstPage(
+                      suroo: '',
+                      joop: '',
+                    ),
+                  ),
+                );
+              },
+              child: Container(
+                height: 150,
+                width: 120,
+                decoration: BoxDecoration(
+                    color: const Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(30)),
+                child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+          ]),
         ),
-<<<<<<< HEAD
-=======
-        bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.blue,
-          onTap: (value) {
-          },
-          currentIndex: 0,
-          iconSize: 20.0,
-          items: const [
-            BottomNavigationBarItem(label: 'home', icon: Icon(Icons.home)),
-            BottomNavigationBarItem(label: 'person', icon: Icon(Icons.person))
-          ],
-        ),
->>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.blue,
+        onTap: (value) {},
+        currentIndex: 0,
+        iconSize: 20.0,
+        items: const [
+          BottomNavigationBarItem(label: 'home', icon: Icon(Icons.home)),
+          BottomNavigationBarItem(label: 'person', icon: Icon(Icons.person))
+        ],
       ),
     );
   }
