@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+import 'package:dinbil/baaluuluktar/first_page.dart';
+import 'package:dinbil/modules/ImportantDate/date.dart';
+import 'package:dinbil/modules/makalalar/an_article.dart';
+import 'package:dinbil/modules/suroo_joob/suroo_joob.dart';
+>>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
 import 'package:dinbil/modules/test/test.dart';
 
 import 'package:flutter/material.dart';
@@ -100,14 +107,62 @@ class HomeView extends StatelessWidget {
                                   ],
                                 ),
                               ),
+<<<<<<< HEAD
                             )),
                   ],
                 ),
+=======
+                            ),
+                          ),
+                        ]),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const FirstPage (suroo: '', joop: '',),
+                            ),
+                          );
+                        },
+                     child: Container(
+                        height: 150,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            color: const Color(0xffffffff),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+                      ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
+                ],
+>>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
               ),
               const SizedBox(height: 15),
             ],
           ),
         ),
+<<<<<<< HEAD
+=======
+        bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.blue,
+          onTap: (value) {
+          },
+          currentIndex: 0,
+          iconSize: 20.0,
+          items: const [
+            BottomNavigationBarItem(label: 'home', icon: Icon(Icons.home)),
+            BottomNavigationBarItem(label: 'person', icon: Icon(Icons.person))
+          ],
+        ),
+>>>>>>> 675f16bd6254def2a7b6615eac92f2ee2aaaf9e2
       ),
     );
   }
