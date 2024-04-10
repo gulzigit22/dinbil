@@ -1,9 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:dinbil/baaluuluktar/answer_view.dart';
-import 'package:dinbil/modules/model_baaluuluk.dart';
 import 'package:flutter/material.dart';
-// import 'package:dinbil/service/model_baaluuluk.dart';
-// import 'package:dinbil/view/answer_view.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({
@@ -19,7 +15,7 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPageState extends State<FirstPage> {
-  List baaluuluktarList = [ ];
+  List baaluuluktarList = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +55,6 @@ class _FirstPageState extends State<FirstPage> {
                   },
                   icon: const Icon(Icons.arrow_circle_right_outlined),
                 ),
-                // Text("${baaluuluktarList[index].joop}"),
               ),
             ),
           );

@@ -14,7 +14,6 @@ class AnswerView extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // const Flex(direction: Axis.vertical),
           Padding(
             padding: const EdgeInsets.only(left: 8, top: 15, right: 8),
             child: Container(
